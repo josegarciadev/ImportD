@@ -5,7 +5,7 @@ const Progressbar = ({classes,title,subtitle1,subtitle2,subtitle3,subtitle4,subt
         <div className={`bg-white shadow-xl py-1 px-4 my-2 ${classes}`} >
             <div className='flex justify-between p-2 mb-1'>
                 <h6 className="font-bold">{title} </h6>
-                <div className='text-center text-xs text-gray-300'><p># OFF </p><small>SHIPMENTS</small></div>
+                <div className='text-center text-xs text-gray-400'><p># OFF </p><small>SHIPMENTS</small></div>
             </div>
              <div>
                 <div className="relative pt-1" style={{fontSize:'0.7em'}}>
@@ -21,8 +21,8 @@ const Progressbar = ({classes,title,subtitle1,subtitle2,subtitle3,subtitle4,subt
             <div>
                 <div className="relative pt-1" style={{fontSize:'0.7em'}}>
                 <div className="clearfix  text-gray-800  font-bold  flex justify-between">
-                            <span className="pull-right m-0 fw-semi-bold">{subtitle2} {(button) && <ButtonSearch/>}</span>
-                            <span className="fs-mini">{shipment2}</span>
+                            <span className=" m-0 ">{subtitle2} <span className='my-3'>{(button) && <ButtonSearch/>}</span></span>
+                            <span >{shipment2}</span>
                         </div>
                     <div className="overflow-hidden h-1 mb-3 text-xs flex rounded bg-gray-200">
                         <div style={{ width: value2+'%' }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bgPrimary"></div>
