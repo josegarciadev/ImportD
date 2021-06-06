@@ -37,3 +37,59 @@ body{
   color:white;
   background: #005792;
 }
+
+.colorPrimary{
+  color: #005792;
+}
+.colorSecondary{
+  color:#798892;
+}
+.colorWarning{
+  color: #FDA700;
+}
+.colorSuccess{
+  color: #21AE8C;
+}
+.colorInfo{
+  color: #1A86D0;
+}
+.colorDanger{
+  color: #FD5F00;
+}
+.colorInverse{
+  color: #002B49;
+}
+.colorTextColor{
+  color: #495057;
+}
+.colorGray{
+  color: #D7DFE6;
+}
+
+.bgPrimary{
+  background: #005792;
+}
+.bgSecondary{
+  background:#798892;
+}
+.bgWarning{
+  background: #FDA700;
+}
+.bgSuccess{
+  background: #21AE8C;
+}
+.bgInfo{
+  background: #1A86D0;
+}
+.bgDanger{
+  background: #FD5F00;
+}
+.bgInverse{
+  background: #002B49;
+}
+.bgTextColor{
+  background: #495057;
+}
+.bgGray{
+  background: #D7DFE6;
+}
