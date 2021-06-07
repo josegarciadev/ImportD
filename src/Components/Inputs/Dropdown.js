@@ -6,11 +6,19 @@ const Dropdown = () =>{
     
 
     const [state,setState] = useState(false);
-
+    const handleChange = (e) =>{
+        console.log(e.target.value)
+    }
     const toggle= ()=> setState( last=> !last);
     return (
         <div className="relative flex justify-center items-center">
-            <a  className="relative py-2 px-1 my-auto cursor-pointer" onClick={toggle}>Dropdown</a>
+            <select className='form-select outline-none focus:outline-none  p-1' onChange={(e)=>handleChange(e)}>
+                <option value='PRODUCT' default >Product</option>
+                <option value='IMPORTER'  >Importer</option>
+                <option value='SUPPLIER'  >Supplier</option>
+                <option value='HSCODE'  >HS CODE</option>
+            </select>
+            {/* <a  className="relative py-2 px-1 my-auto cursor-pointer" onClick={toggle}>Dropdown</a>
             {state && <div style={{
                 border:"1px solid #00000026",
                 boxShadow:"0 0.5rem 1rem rgb(0 0 0 / 18%)",
@@ -19,7 +27,7 @@ const Dropdown = () =>{
                 <button className="border-none button-secondary w-full py-1 px-5">
                     Here
                 </button>
-            </div>}
+            </div>} */}
         </div>
     );
 }

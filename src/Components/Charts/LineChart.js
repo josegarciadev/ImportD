@@ -12,7 +12,9 @@ let lineColors = [primary, success, warning];
 const data = {
     options: {
         type:"bar",
-       
+        dataLabels:{
+            enabled:false,
+        },
         plotOptions: {
             bar: {
                 distributed: true
@@ -57,11 +59,11 @@ const data = {
 
 const LineChart = ()=>{
     return(
-        <section className="bg-white shadow-xl py-4 px-5 my-2 md:col-span-2" >
+        <section className="bg-white shadow-xl py-1 px-1 my-2 md:col-span-2" >
             <header className="pt-4 px-5 pb-0">
-                <h5 className="text-xl font-normal">
-                    SHIPMENTS 
-                    <span className="font-semibold"> BY MONTH</span>
+                <h5 className="text-xl  font-semibold font-sans text-gray-500">
+                    SHIPMENTS BY MONTH
+                  
                 </h5>
             </header>
             <Chart

@@ -87,7 +87,7 @@ function App() {
             title='TOP IMPORTERS'
             subtitle1='GILDAN' subtitle2='BIC GRAPHIC' subtitle3='SWEDA CO.' subtitle4='STORMTECH' subtitle5='AMAZON'
             shipment1='280' shipment2='257' shipment3='241' shipment4='198' shipment5='175'
-            value1='80' value2='70' value3='70' value4='45' value5='35'
+            value1='80' value2='70' value3='70' value4='45' value5='35' button={true}
             />
 
         </div>

@@ -1,0 +1,13 @@
+.react-datepicker__input-container input {
+    width: 100%;
+    display:flex;
+ }
+ .react-datepicker-wrapper {
+    width: 90px;
+
+  }
+  
+ .containerInputs{
+     border: 1px solid rgb(9, 9, 92);
+     border-radius: 0.5em;
+ }

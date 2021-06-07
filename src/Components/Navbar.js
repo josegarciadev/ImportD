@@ -1,4 +1,4 @@
-import { Search, Dropdown } from "Components/Inputs"
+import { Search, Dropdown, DateTime } from "Components/Inputs"
 const NavBar = ()=>{
 
     return(
@@ -9,8 +9,8 @@ const NavBar = ()=>{
                 <button className="button-primary flex items-center  text-sm py-1.5 px-4 ml-3 h-7 rounded-3xl">Clear</button>
             </div>
             
-            <div>
-                sa
+            <div className="flex w-full justify-end items-center bg-white mr-10">
+                <DateTime/>
             </div>
         </nav>
     )
