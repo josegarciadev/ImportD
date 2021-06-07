@@ -28,7 +28,7 @@ const DateTime = () => {
                 className='ml-1'
                 dateFormat="yyyy-MM-dd"
                 selected={endDate}
-                onChange={(date) => setStartDate(date)}
+                onChange={(date) => setEndDate(date)}
                 peekNextMonth
                 showMonthDropdown
                 showYearDropdown

@@ -2,12 +2,8 @@ import NavBar from "Components/Navbar";
 import ProductInfo from "Components/ProductInfo"
 import Widget from "Components/Widget"
 import { Chart, LineChart, PieChart }from "Components/Charts"
-import ApexChart from "Components/Charts/ReactApexChart";
-import TableData from "Components/Table/Table";
 import Progressbar from "Components/Progressbar/Progressbar";
-import ButtonSearch from "Components/Progressbar/buttonSearch";
-//import ReactApexChart from "react-apexcharts";
-//import  TableData  from "Components/Table/Table";
+import {ButtonExport,TableData} from 'Components/Table'
 
 
 function App() {
@@ -91,8 +87,13 @@ function App() {
             />
 
         </div>
+        <div className='my-2 flex justify-end'>
+        <ButtonExport color='bgPrimary' name='CSV'/>
+          <ButtonExport color='bgInfo' name='EXCEL'/>
+          <ButtonExport color='bgSuccess' name='CLEAR'/>
+        </div>
         <div className=" w-full shadow-xl">
-          <ButtonSearch/>
+         
           <TableData/>
         </div>
       </div>
